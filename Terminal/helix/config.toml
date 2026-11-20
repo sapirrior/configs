@@ -1,0 +1,78 @@
+theme = "github_dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+cursorcolumn = false
+mouse = true
+auto-completion = true
+auto-format = true
+auto-save = true
+auto-pairs = true
+idle-timeout = 120
+completion-trigger-len = 2
+completion-replace = true
+rulers = []
+bufferline = "multiple"
+color-modes = true
+true-color = true
+undercurl = true
+scrolloff = 8
+shell = ["sh", "-c"]
+text-width = 100
+popup-border = "all"
+end-of-line-diagnostics = "hint"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.gutters]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+[editor.file-picker]
+hidden = false
+git-ignore = true
+follow-symlinks = true
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = false
+max-wrap = 25
+max-indent-retain = 40
+wrap-indicator = ""
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+display-signature-help-docs = true
+auto-signature-help = true
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "disable"
